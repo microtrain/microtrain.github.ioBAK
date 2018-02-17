@@ -51,7 +51,7 @@ a img{
   position: absolute;
   right: 20%;
   bottom: -26px;
-  z-index: 3;
+  z-index: 10000;
 }
 
 .bootcamp-mobile-title {
@@ -184,9 +184,7 @@ a img{
   font-weight: 500;
 }
 
-.bootcamp-sloagn-wrapper {
-  padding-top: 180px;
-}
+
 
 .bootcamp-sloagn-background {
   background: rgba(208, 208, 208, 0.5); 
@@ -208,7 +206,7 @@ a img{
 
 .bootcamp-request-info {
   font-size: 21px;
-  margin-top: 150px;
+  
 }
 
 .bootcamp-beyond-section {
@@ -244,10 +242,10 @@ a img{
   margin-right: 32px;
 }
 
-  .bootcamp-wear .bootcamp-beyond-image {
-    width: 40%;
-    z-index: 1;
-  }
+.bootcamp-wear .bootcamp-beyond-image {
+  width: 40%;
+  z-index: 1;
+}
 
 
 

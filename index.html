@@ -51,61 +51,42 @@
       <div class="bootcamp-content mdl-layout__content">
         <a name="top"></a>
 
+        <div style="position: relative;">
+            <div class="video-container" style="background: #000; height: 500px; overflow: hidden; box-sizing: border-box; position: relative;">
 
-
-        <div class="homepage-hero-module">
-          
-            <div class="video-container" style="height: 900px; overflow: hidden;">
-
-                <div class="title-container" style="position:absolute; top: 120px; width: 100%; text-align: center;">
-
+                <div class="title-container" style="position:absolute; top: 140px; width:100%; text-align:center;">
                     <div class="headline">
-                        <!--Original logo height 80px-->
-                        <!-- <img src="" height="80" alt=""> -->
                         <div class="bootcamp-sloagn-wrapper">
                             <div class="bootcamp-sloagn-background" style="background: none;">
-                                <!--<div class="logo-font bootcamp-slogan">Chicago's Premire Multi-Stack Bootcamp</div>
-                                <div class="logo-font bootcamp-sub-slogan">Full Stack Web and Hybrid Mobile Application Development</div>-->
                                 <div class="logo-font bootcamp-slogan">Zero to Dev in Ten Weeks</div>
                                 <div class="logo-font bootcamp-sub-slogan">Full Stack Web and Hybrid Mobile Application Development</div>
                             </div>
-                
                           </div>
-                    </div>
-        
-                    <div class="text-center" id="loadBannerVideoSpinner" style="background-color: rgba(0, 0, 0, 0.5); padding: 10px; border-radius: 4px; display: none; margin-top: 20px;">
-                        <h5 class="text-thin text-primary">Loading Coverr... <i class="fa fa-circle-o-notch fa-spin"></i></h5>
-                    </div>
+                    </div>                    
+                </div>
 
-                    
-                    <div class="bootcamp-request-info">
-                      <a href="#" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"> request information</a>
-                    </div>
 
-                    <a href="#beyond">
-                      <button class="bootcamp-fab mdl-button mdl-button--colored mdl-js-button mdl-button--fab mdl-js-ripple-effect">
-                        <i class="material-icons">expand_more</i>
-                      </button>
+                <div style="width: 100%; z-index:1000; text-align: center; position: absolute; bottom: 0;">
+                    <a href="#" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" style="margin: 0 0 32px;"> 
+                      request information
                     </a>
-                    
                 </div>
 
                 <div class="filter"></div>
-
-                <video autoplay id="coverVid" class="fillWidth">
-                    <source id="mp4" type="video/mp4">
-                    <source id="webm" type="video/webm">
+                <video autoplay loop id="coverVid">
+                    <source id="mp4" src="img/Girls-Code/MP4/Girls-Code.mp4" type="video/mp4">
+                    <source id="webm" src="img/Girls-Code/WEBM/Girls-Code.webm" type="video/webm">
                 </video>
 
-                <div class="poster hidden">
-                    <img src="img/Hello-World/Hello-World.jpeg" alt="">
-                </div>
-
             </div>
+
+            <a href="#beyond">
+              <button class="bootcamp-fab mdl-button mdl-button--colored mdl-js-button mdl-button--fab mdl-js-ripple-effect">
+                <i class="material-icons">expand_more</i>
+              </button>
+            </a>
+
         </div>
-
-
-
 
 
         <div class="bootcamp-beyond-section mdl-typography--text-center">
@@ -380,35 +361,39 @@
     </div>
     <script src="https://code.getmdl.io/1.3.0/material.min.js"></script>
     <script>
-
+/*
         var i = 0;
-        var mp4 = [
+        var mp4s = [
           'img/Girls-Code/MP4/Girls-Code.mp4',
           'img/Love-Coding/MP4/Love-Coding.mp4',
           'img/Hello-World/Hello-World.mp4'
         ];
 
-        var webm = [
+        var webms = [
           
           'img/Girls-Code/WEBM/Girls-Code.webm',
           'img/Love-Coding/WEBM/Love-Coding.webm',
           'img/Hello-World/Hello-World.webm'
         ];
 
-        document.getElementById('mp4').setAttribute("src", mp4[i++]);
-        document.getElementById('webm').setAttribute("src", webm[i]);
+        var video = document.getElementById('coverVid');
+        var mp4 =  document.getElementById('mp4');
+        var webm =  document.getElementById('webm');
 
-        document.getElementById('coverVid').load();
-        document.getElementById('coverVid').play().then(() => {
+        mp4.setAttribute("src", mp4s[i++]);
+        webm.setAttribute("src", webms[i]);
 
-          document.getElementById('coverVid').addEventListener('ended', function(){
+        video.load();
+        video.play().then(() => {
 
-            document.getElementById('mp4').setAttribute("src", mp4[i++]);
-            document.getElementById('webm').setAttribute("src", webm[i]);  
+          video.addEventListener('ended', function(){
 
-            document.getElementById('coverVid').load();
-            document.getElementById('coverVid').play().then(() => {
-              if(i===mp4.length){
+            mp4.setAttribute("src", mp4s[i++]);
+            webm.setAttribute("src", webms[i]);  
+
+            video.load();
+            video.play().then(() => {
+              if(i===mp4s.length){
                 i=0;
               }
             });
@@ -416,7 +401,7 @@
           });
 
         });
-
+*/
 
 
 
