@@ -20,12 +20,16 @@
       svg {
         width: 100%;
       }
-      svg path,
-      svg line,
-      svg circle {
+      svg path {
         stroke-dasharray: 1300;
         animation: dash 20s linear alternate infinite;
         -webkit-animation: dash 20s linear alternate infinite;
+        animation-iteration-count: 1;
+        transition: stroke 1s ease-in-out;
+      }
+
+      svg path:hover {
+        
       }
       @keyframes dash {
         from {
@@ -33,12 +37,31 @@
         }
         to {
           stroke-dashoffset: 0;
+          
+        }
+        0% {
+          stroke: rgba(255,255,255,0.2)
+        }
+        20% {
+          stroke: rgba(243, 155, 22, 0.2)
+        }
+        50% {
+          stroke: rgba(230, 54, 54, 0.2)
+        }
+        70% {
+          stroke: rgba(255,255,255,0.2)
+        }
+        85% {
+          stroke: rgba(88, 82, 240, 0.2)
+        }
+        100% {
+          stroke: rgba(0, 255, 0, .1)
         }
       }
+      
       @-webkit-keyframes dash {
         from {
           stroke-dashoffset: 1300;
-        }
         to {
           stroke-dashoffset: 0;
         }
@@ -103,7 +126,7 @@
                     </a>
                 </div>
           
-                  <svg stroke-width="5" stroke="rgba(255,255,255,0.2)" fill="transparent" height="100%" width="100%"  preserveAspectRatio="none">
+                  <svg stroke-width="5" stroke="rgba(0, 255, 0, .1)" fill="rgba(255,255,255,0.2)" height="100%" width="100%"  preserveAspectRatio="none">
 
                   <path 
                     d="
