@@ -1,0 +1,554 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Developer Bootcamp, Full Stack, Multi-Stack, Chicago, Hybrid Mobile">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <title>CrossStack Development Bootcamp</title>
+
+    <!-- Page styles -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Orbitron|Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+
+    <link rel="stylesheet" href="styles.css">
+
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+    <style>
+
+      svg {
+        width: 100%;
+      }
+      svg path {
+        stroke-dasharray: 1300;
+        animation: dash 20s linear alternate infinite;
+        -webkit-animation: dash 20s linear alternate infinite;
+        animation-iteration-count: 1;
+        transition: stroke 1s ease-in-out;
+      }
+
+      @keyframes dash {
+        from {
+          stroke-dashoffset: 1300;
+        }
+        to {
+          stroke-dashoffset: 0;
+          
+        }
+        0% {
+          stroke: rgba(255,255,255,0.2)
+        }
+        20% {
+          stroke: rgba(243, 155, 22, 0.2)
+        }
+        50% {
+          stroke: rgba(230, 54, 54, 0.2)
+        }
+        70% {
+          stroke: rgba(255,255,255,0.2)
+        }
+        85% {
+          stroke: rgba(88, 82, 240, 0.2)
+        }
+        100% {
+          stroke: rgba(0, 255, 0, .1)
+        }
+      }
+      
+      @-webkit-keyframes dash {
+        from {
+          stroke-dashoffset: 1300;
+        to {
+          stroke-dashoffset: 0;
+        }
+      }
+    
+    </style>
+  </head>
+  <body>
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+
+      <div class="bootcamp-header mdl-layout__header mdl-layout__header--waterfall">
+        <div class="mdl-layout__header-row">
+          <span style="color: #f9efc1; font-weight: bold; font-style: italic; font-size: 26px; padding-top: 12px; font-family: 'Orbitron', sans-serif;">
+            STACK-X
+          </span>
+
+          <!-- Add spacer, to align navigation to the right in desktop -->
+          <div class="bootcamp-header-spacer mdl-layout-spacer"></div>
+
+          <!-- Navigation -->
+          <div class="bootcamp-navigation-container">
+            <nav class="bootcamp-navigation mdl-navigation">
+              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">Assessment</a>
+              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">Information</a>
+            </nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="bootcamp-drawer mdl-layout__drawer">
+        <span class="mdl-layout-title">
+          <img class="bootcamp-logo-image" src="img/logo-bgdark-185.png">
+        </span>
+        <nav class="mdl-navigation">
+          <a class="mdl-navigation__link" href="">Technology</a>
+          <a class="mdl-navigation__link" href="">Assessment</a>
+          <a class="mdl-navigation__link" href="">Information</a>
+        </nav>
+      </div>
+
+      <div class="bootcamp-content mdl-layout__content">
+        <a name="top"></a>
+
+        <div style="position: relative;">
+            <div class="video-container" style="background: linear-gradient( rgb(63,81,181), #000 ); height: 500px; overflow: hidden; box-sizing: border-box; position: relative;">
+
+                <div class="title-container" style="position:absolute; top: 140px; width:100%; text-align:center;">
+                    <div class="headline">
+                        <div class="bootcamp-sloagn-wrapper">
+                            <div class="bootcamp-sloagn-background" style="background: none;">
+                                <div class="bootcamp-slogan">Zero to Dev in Ten Weeks</div>
+                                <div class="bootcamp-sub-slogan">Full Stack Web and Hybrid Mobile Application Development</div>
+                            </div>
+                          </div>
+                    </div>                    
+                </div>
+
+
+                <div style="width: 100%; z-index:1000; text-align: center; position: absolute; bottom: 0;">
+                    <a href="#" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" style="margin: 0 0 32px; background: rgb(230, 84, 37);"> 
+                      request information
+                    </a>
+                </div>
+          
+                  <svg stroke-width="5" stroke="rgba(0, 255, 0, .1)" fill="rgba(255,255,255,0.2)" height="100%" width="100%"  preserveAspectRatio="none">
+
+                  <path 
+                    d="
+                      M 0 50, 50 50
+                      a 10,10 0 1,0 20,0
+                      a 10,10 0 1,0 -20,0
+
+                      m 15 6, 50 120
+                      a 10,10 0 1,0 20, 0
+                      a 10,10 0 1,0 -20, 0
+
+                      m 20 0, 300 0
+                      a 10,10 0 1,0 20, 0
+                      a 10,10 0 1,0 -20, 0
+
+                      m 15 10, 100 200
+                      a 10,10 0 1,0 20, 0
+                      a 10,10 0 1,0 -20, 0
+
+                      m 20 0, 800 0
+                      a 10,10 0 1,0 20,0
+                      a 10,10 0 1,0 -20,0
+
+                      m 15 10, 100 200
+                      a 10,10 0 1,0 20,0
+                      a 10,10 0 1,0 -20,0
+
+                      m 20 0, 20 20
+                    "
+                  />
+
+                  <path 
+                    d="
+                      M 0 75, 200 75
+                      a 10,10 0 1,0 20,0
+                      a 10,10 0 1,0 -20,0
+
+                      m 15 6, 50 120
+                      a 10,10 0 1,0 20, 0
+                      a 10,10 0 1,0 -20, 0
+
+                      m 20 0, 300 0
+                      a 10,10 0 1,0 20, 0
+                      a 10,10 0 1,0 -20, 0
+
+                      m 15 10, 100 200
+                      a 10,10 0 1,0 20, 0
+                      a 10,10 0 1,0 -20, 0
+
+                      m 20 0, 800 0
+                      a 10,10 0 1,0 20,0
+                      a 10,10 0 1,0 -20,0
+
+                      m 15 10, 100 200
+                      a 10,10 0 1,0 20,0
+                      a 10,10 0 1,0 -20,0
+
+                      m 20 0, 20 20
+                    "
+                  />
+                  </svg>
+                <!--      
+                <div class="filter"></div>
+                <video autoplay loop id="coverVid">
+                    <source id="mp4" src="img/Girls-Code/MP4/Girls-Code.mp4" type="video/mp4">
+                    <source id="webm" src="img/Girls-Code/WEBM/Girls-Code.webm" type="video/webm">
+                </video>-->
+
+            </div>
+
+            <a href="#beyond">
+              <button class="mdl-button mdl-button--colored mdl-js-button mdl-button--fab mdl-js-ripple-effect bootcamp-fab" style="background: rgb(230, 84, 37);">
+                <i class="material-icons">expand_more</i>
+              </button>
+            </a>
+
+        </div>
+
+
+        <div class="bootcamp-beyond-section mdl-typography--text-center">
+          <a name="beyond"></a>
+          <div class="mdl-typography--display-2 mdl-typography--font-thin">Beyond Code</div>
+          <p class="mdl-typography--headline mdl-typography--font-thin">
+              Build a production environemnt from scratch, manage it with your own app.
+          </p>
+
+          <div class="bootcamp-card-container mdl-grid">
+
+
+            <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
+              <div class="mdl-card__title">
+                  <h4 class="mdl-card__title-text">System Basics</h4>
+              </div>
+              <div class="mdl-card__supporting-text">
+                <span class="mdl-typography--font-light mdl-typography--subhead">
+                  Working code is only half the battle. Start by building a Linux based development environment.
+                  Your production stack will be based on this build. Building and learning your environemnt more
+                  from scratch will give you a greater understanding of all the toll at your disposal.
+                </span>
+              </div>
+              <div class="mdl-card__actions">
+                  <a class="bootcamp-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="">
+                    Learn more
+                    <i class="material-icons">chevron_right</i>
+                  </a>
+              </div>
+            </div>
+
+            <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
+                <div class="mdl-card__title">
+                    <h4 class="mdl-card__title-text">Cross Stack Disciplines</h4>
+                </div>
+                <div class="mdl-card__supporting-text">
+                  <span class="mdl-typography--font-light mdl-typography--subhead">
+                    Mastering a tech stack is great but understanding how stacks work is even better. Switching tech 
+                    stacks do make old challenges go away. When you launch a website the same security and perfomance 
+                    best practices apply across all stacks. Under these and you be able to build on any stack. 
+                  </span>
+                </div>
+                <div class="mdl-card__actions">
+                    <a class="bootcamp-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="">
+                        Learn more
+                      <i class="material-icons">chevron_right</i>
+                    </a>
+                </div>
+              </div>
+
+              <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
+                  <div class="mdl-card__title">
+                      <h4 class="mdl-card__title-text">Real World Workflows</h4>
+                  </div>
+                  <div class="mdl-card__supporting-text">
+                    <span class="mdl-typography--font-light mdl-typography--subhead">
+                      Versions control systems (vcs) are a staple of modern development; Git and GitHub are the go to tools in the industry. 
+                      Learn the fundamentals of git, branching models, repository management and continual integration workflows.
+                    </span>
+                  </div>
+                  <div class="mdl-card__actions">
+                      <a class="bootcamp-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="">
+                          Learn more
+                        <i class="material-icons">chevron_right</i>
+                      </a>
+                  </div>
+                </div>
+
+                <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
+                    <div class="mdl-card__title">
+                        <h4 class="mdl-card__title-text">Production Environment</h4>
+                    </div>
+                    <div class="mdl-card__supporting-text">
+                      <span class="mdl-typography--font-light mdl-typography--subhead">
+                        Using all the knowledge aquired in the the class, spin up a cloud based production envrionment. 
+                        You'll build a cloud server from scratch, attach to a third party database, and configure DNS and
+                        SSL. This environment is your to keep.
+                      </span>
+                    </div>
+                    <div class="mdl-card__actions">
+                        <a class="bootcamp-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="">
+                            Learn more
+                          <i class="material-icons">chevron_right</i>
+                        </a>
+                    </div>
+                  </div>
+          </div>
+        </div>
+
+        <div class="bootcamp-wear-section">
+          <div class="bootcamp-wear-band">
+            <div class="bootcamp-wear-band-text">
+              <div class="mdl-typography--display-2 mdl-typography--font-thin">Learn to code by actually writing code</div>
+              <p class="mdl-typography--headline mdl-typography--font-thin">
+                Repetition is the key to success. Working lectures assure your coding 
+                what your hearing. Labs force you to recode and reapply what you've learned.
+              </p>
+              <p>
+                <a class="mdl-typography--font-regular mdl-typography--text-uppercase bootcamp-alt-link" href="">
+                  See the langauges you'll learn&nbsp;<i class="material-icons">chevron_right</i>
+                </a>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="bootcamp-customized-section">
+          <div class="bootcamp-customized-section-text">
+
+            <div class="mdl-typography--display-2 mdl-typography--font-thin">Full Stack Development</div>
+            <p class="mdl-typography--headline mdl-typography--font-thin">
+                Build client side mobile and web apps, build web site's and data APIs, create databases.
+            </p>
+  
+
+          </div>
+          <div class="bootcamp-customized-section-image"></div>
+        </div>
+        <div class="bootcamp-more-section">
+          <div class="bootcamp-section-title mdl-typography--display-1-color-contrast">
+            Stacks and Tech
+          </div>
+          <div class="bootcamp-card-container mdl-grid">
+
+
+
+              <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
+                  <div class="mdl-card__media">
+                    <img src="img/shutterstock_549472756.jpg">
+                  </div>
+    
+                  <div class="mdl-card__title">
+                     <h4 class="mdl-card__title-text">Front End</h4>
+                  </div>
+    
+                   <div class="mdl-card__supporting-text">
+                     <span class="mdl-typography--font-light mdl-typography--subhead">
+                       <ul>
+                         <li>HTML</li>
+                         <li>CSS</li>
+                         <li>JavaScript</li>
+                         <li>jQuery</li>
+                         <li>Angular</li>
+                         <li>Bootstrap</li>
+                       </ul>
+                     </span>
+                   </div>
+                   <div class="mdl-card__actions">
+                      <a class="bootcamp-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="">
+                        Learn More
+                        <i class="material-icons">chevron_right</i>
+                      </a>
+                   </div>
+    
+                </div>
+
+
+            <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
+              <div class="mdl-card__media" style="height: 161px; background: #efefef;padding-top: 7px;">
+                <img src="img/LAMP_software_bundle.svg">
+              </div>
+              <div class="mdl-card__title">
+                 <h4 class="mdl-card__title-text">LAMP</h4>
+              </div>
+              <div class="mdl-card__supporting-text">
+                <span class="mdl-typography--font-light mdl-typography--subhead">
+                  <ul>
+                    <li>Linux</li>
+                    <li>Apache</li>
+                    <li>MySQL</li>
+                    <li>PHP</li>
+                    <li>Python</li>
+                  </ul>
+                </span>
+              </div>
+              <div class="mdl-card__actions">
+                 <a class="bootcamp-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="">
+                   Learn More
+                   <i class="material-icons">chevron_right</i>
+                 </a>
+              </div>
+            </div>
+
+
+
+
+            <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
+              <div class="mdl-card__media">
+                <img src="img/shutterstock_306575414.jpg">
+              </div>
+              <div class="mdl-card__title">
+                 <h4 class="mdl-card__title-text">MEAN</h4>
+              </div>
+              <div class="mdl-card__supporting-text">
+                  <span class="mdl-typography--font-light mdl-typography--subhead">
+                    <ul>
+                      <li>MongoDB</li>
+                      <li>ExpressJS</li>
+                      <li>Angular</li>
+                      <li>NodeJS</li>
+                    </ul>
+                  </span>
+                </div>
+                <div class="mdl-card__actions">
+                   <a class="bootcamp-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="">
+                     Learn More
+                     <i class="material-icons">chevron_right</i>
+                   </a>
+                </div>
+              </div>
+
+
+
+
+            <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
+              <div class="mdl-card__media" style="height: 161px; background: #efefef;padding-top: 7px;">
+                <img src="img/shutterstock_433368475.jpg">
+              </div>
+              <div class="mdl-card__title">
+                 <h4 class="mdl-card__title-text">Hybrid Mobile</h4>
+              </div>
+              <div class="mdl-card__supporting-text">
+                <span class="mdl-typography--font-light mdl-typography--subhead">
+                  <ul>
+                    <li>Cordova</li>
+                    <li>Angular</li>
+                    <li>Inoic</li>
+                    <li>iOS</li>
+                    <li>Android</li>
+                  </ul>
+                </span>
+              </div>
+              <div class="mdl-card__actions">
+                 <a class="bootcamp-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="">
+                   Learn More
+                   <i class="material-icons">chevron_right</i>
+                 </a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <footer class="bootcamp-footer mdl-mega-footer">
+          <div class="mdl-mega-footer--top-section">
+            <div class="mdl-mega-footer--left-section">
+              <i class="fab fa-linkedin fa-circle fa-3x"></i>
+              &nbsp;&nbsp;
+              <i class="fab fa-twitter fa-circle fa-3x"></i>
+              &nbsp;&nbsp;
+              <i class="fab fa-github fa-circle fa-3x"></i>
+            </div>
+            <div class="mdl-mega-footer--right-section">
+              <a class="mdl-typography--font-light" href="#top">
+                Back to Top
+                <i class="material-icons">expand_less</i>
+              </a>
+            </div>
+          </div>
+
+          <div class="mdl-mega-footer--middle-section">
+            <p class="mdl-typography--font-light">© 2017-2018 MicroTrain Technologies</p>
+          </div>
+
+          <div class="mdl-mega-footer--bottom-section">
+            <a class="bootcamp-link mdl-typography--font-light" href="">Blog</a>
+            <a class="bootcamp-link mdl-typography--font-light" href="">Privacy</a>
+            <a class="bootcamp-link mdl-typography--font-light" href="">Terms</a>
+          </div>
+
+        </footer>
+      </div>
+    </div>
+    <script src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+    <script>
+/*
+        var i = 0;
+        var mp4s = [
+          'img/Girls-Code/MP4/Girls-Code.mp4',
+          'img/Love-Coding/MP4/Love-Coding.mp4',
+          'img/Hello-World/Hello-World.mp4'
+        ];
+
+        var webms = [
+          
+          'img/Girls-Code/WEBM/Girls-Code.webm',
+          'img/Love-Coding/WEBM/Love-Coding.webm',
+          'img/Hello-World/Hello-World.webm'
+        ];
+
+        var video = document.getElementById('coverVid');
+        var mp4 =  document.getElementById('mp4');
+        var webm =  document.getElementById('webm');
+
+        mp4.setAttribute("src", mp4s[i++]);
+        webm.setAttribute("src", webms[i]);
+
+        video.load();
+        video.play().then(() => {
+
+          video.addEventListener('ended', function(){
+
+            mp4.setAttribute("src", mp4s[i++]);
+            webm.setAttribute("src", webms[i]);  
+
+            video.load();
+            video.play().then(() => {
+              if(i===mp4s.length){
+                i=0;
+              }
+            });
+
+          });
+
+        });
+*/
+
+
+
+/*
+          var video = videojs('coverVid').ready(function(){
+
+          var player = this;
+
+          player.on('ended', function() {
+            
+            alert('video is done!');
+
+          });
+
+          });
+*/
+        /*
+        setInterval(function() {
+          document.getElementById('coverVid').close();  
+
+          document.getElementById('mp4').setAttribute("src", mp4[i]);
+          document.getElementById('webm').setAttribute("src", webm[i]);  
+          
+          document.getElementById('coverVid').load();
+          document.getElementById('coverVid').play();  
+
+          console.log('change');
+          i++;
+
+          if(i===mp4.length){ i=0; }
+                    
+
+        }, 5000);*/
+    </script>
+  </body>
+</html>
