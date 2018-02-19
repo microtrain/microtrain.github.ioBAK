@@ -20,6 +20,7 @@
       svg {
         width: 100%;
       }
+      
       svg path {
         stroke-dasharray: 1300;
         animation: dash 20s linear alternate infinite;
@@ -55,15 +56,7 @@
           stroke: rgba(0, 255, 0, .1)
         }
       }
-      
-      @-webkit-keyframes dash {
-        from {
-          stroke-dashoffset: 1300;
-        to {
-          stroke-dashoffset: 0;
-        }
-      }
-    
+
     </style>
   </head>
   <body>
@@ -71,7 +64,7 @@
 
       <div class="bootcamp-header mdl-layout__header mdl-layout__header--waterfall">
         <div class="mdl-layout__header-row">
-          <span style="color: #f9efc1; font-weight: bold; font-style: italic; font-size: 26px; padding-top: 12px; font-family: 'Orbitron', sans-serif;">
+          <span class="mdl-layout-title">
             STACK-X
           </span>
 
@@ -89,9 +82,9 @@
       </div>
 
       <div class="bootcamp-drawer mdl-layout__drawer">
-        <span class="mdl-layout-title">
-          <img class="bootcamp-logo-image" src="img/logo-bgdark-185.png">
-        </span>
+        <div class="mdl-layout-title">
+          STACK-X
+        </div>
         <nav class="mdl-navigation">
           <a class="mdl-navigation__link" href="">Technology</a>
           <a class="mdl-navigation__link" href="">Assessment</a>
@@ -102,8 +95,8 @@
       <div class="bootcamp-content mdl-layout__content">
         <a name="top"></a>
 
-        <div style="position: relative;">
-            <div class="video-container" style="background: linear-gradient( rgb(63,81,181), #000 ); height: 500px; overflow: hidden; box-sizing: border-box; position: relative;">
+        <div class="cover-holder">
+            <div class="cover">
 
                 <div class="title-container" style="position:absolute; top: 140px; width:100%; text-align:center;">
                     <div class="headline">
@@ -116,61 +109,51 @@
                     </div>                    
                 </div>
 
+              <svg stroke-width="5" stroke="rgba(0, 255, 0, .1)" fill="rgba(255,255,255,0.2)" height="100%" width="100%"  preserveAspectRatio="none">
+                <path 
+                  d="
+                    M 0 50, 50 50
+                    a 10,10 0 1,0 20,0
+                    a 10,10 0 1,0 -20,0
 
-                <div style="width: 100%; z-index:1000; text-align: center; position: absolute; bottom: 0;">
-                    <a href="#" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" style="margin: 0 0 32px; background: rgb(230, 84, 37);"> 
-                      request information
-                    </a>
-                </div>
-          
-                  <svg stroke-width="5" stroke="rgba(0, 255, 0, .1)" fill="rgba(255,255,255,0.2)" height="100%" width="100%"  preserveAspectRatio="none">
+                    m 15 6, 50 120
+                    a 10,10 0 1,0 20, 0
+                    a 10,10 0 1,0 -20, 0
 
-                  <path 
-                    d="
-                      M 0 50, 50 50
-                      a 10,10 0 1,0 20,0
-                      a 10,10 0 1,0 -20,0
+                    m 20 0, 300 0
+                    a 10,10 0 1,0 20, 0
+                    a 10,10 0 1,0 -20, 0
 
-                      m 15 6, 50 120
-                      a 10,10 0 1,0 20, 0
-                      a 10,10 0 1,0 -20, 0
+                    m 15 10, 100 200
+                    a 10,10 0 1,0 20, 0
+                    a 10,10 0 1,0 -20, 0
 
-                      m 20 0, 300 0
-                      a 10,10 0 1,0 20, 0
-                      a 10,10 0 1,0 -20, 0
+                    m 20 0, 800 0
+                    a 10,10 0 1,0 20,0
+                    a 10,10 0 1,0 -20,0
 
-                      m 15 10, 100 200
-                      a 10,10 0 1,0 20, 0
-                      a 10,10 0 1,0 -20, 0
+                    m 15 10, 100 200
+                    a 10,10 0 1,0 20,0
+                    a 10,10 0 1,0 -20,0
 
-                      m 20 0, 800 0
-                      a 10,10 0 1,0 20,0
-                      a 10,10 0 1,0 -20,0
+                    m 20 0, 20 20
+                  "
+                />
+              </svg>
+              
+            </div>
 
-                      m 15 10, 100 200
-                      a 10,10 0 1,0 20,0
-                      a 10,10 0 1,0 -20,0
-
-                      m 20 0, 20 20
-                    "
-                  />
-                </svg>
-                  
-                <!--      
-                <div class="filter"></div>
-                <video autoplay loop id="coverVid">
-                    <source id="mp4" src="img/Girls-Code/MP4/Girls-Code.mp4" type="video/mp4">
-                    <source id="webm" src="img/Girls-Code/WEBM/Girls-Code.webm" type="video/webm">
-                </video>-->
-
+            <div style="width: 100%; z-index:1000; text-align: center; position: absolute; bottom: 0;">
+              <a href="#" class="mdl-button bootcamp-request-info"> 
+                request information
+              </a>
             </div>
 
             <a href="#beyond">
-              <button class="mdl-button mdl-button--colored mdl-js-button mdl-button--fab mdl-js-ripple-effect bootcamp-fab" style="background: rgb(230, 84, 37);">
+              <button class="mdl-button mdl-button--colored mdl-js-button mdl-button--fab mdl-js-ripple-effect bootcamp-fab request-info" style="">
                 <i class="material-icons">expand_more</i>
               </button>
             </a>
-
         </div>
 
 

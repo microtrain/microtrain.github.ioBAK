@@ -24,20 +24,31 @@ a img{
 }
 
 ::-moz-selection {
-  background-color: rgb(255,64,129);
+  background-color: rgb(232, 83, 36);
   color: #fff;
 }
 
 ::selection {
-  background-color: rgb(255,64,129);
+  background-color: rgb(232, 83, 36);
   color: #fff;
+}
+
+.cover-holder{
+  position: relative;
+}
+
+.cover {
+  background: linear-gradient( rgb(63,81,181), #000 ); 
+  height: 500px; 
+  overflow: hidden; 
+  box-sizing: border-box; 
+  position: relative;
 }
 
 .bootcamp-header .mdl-menu__container {
   z-index: 50;
   margin: 0 !important;
 }
-
 
 .mdl-textfield--expandable {
   width: auto;
@@ -47,7 +58,8 @@ a img{
   position: absolute;
   right: 20%;
   bottom: -26px;
-  z-index: 10000;
+  z-index: 10001;
+  background: rgb(232, 83, 36) !important;
 }
 
 .bootcamp-mobile-title {
@@ -115,17 +127,11 @@ a img{
   border-bottom: 4px solid transparent;
 }
 
-  .bootcamp-navigation .mdl-navigation__link:hover {
-    border-bottom: 4px solid #8bc34a;
-  }
-
-.bootcamp-search-box {
-  -webkit-order: 2;
-      -ms-flex-order: 2;
-          order: 2;
-  margin-left: 16px;
-  margin-right: 16px;
+.bootcamp-navigation .mdl-navigation__link:hover {
+  border-bottom: 4px solid rgb(230, 84, 37);
+  color: rgb(230, 84, 37);
 }
+
 
 .bootcamp-more-button {
   -webkit-order: 3;
@@ -138,31 +144,41 @@ a img{
   border-right: none;
 }
 
-  .bootcamp-drawer-separator {
-    height: 1px;
-    background-color: #dcdcdc;
-    margin: 8px 0;
-  }
+.bootcamp-drawer-separator {
+  height: 1px;
+  background-color: #dcdcdc;
+  margin: 8px 0;
+}
 
-  .bootcamp-drawer .mdl-navigation__link.mdl-navigation__link {
-    font-size: 14px;
-    color: #757575;
-  }
+.bootcamp-drawer .mdl-navigation__link.mdl-navigation__link {
+  font-size: 14px;
+  color: #757575;
+}
 
-  .bootcamp-drawer span.mdl-navigation__link.mdl-navigation__link {
-    color: #8bc34a;
-  }
+.bootcamp-drawer span.mdl-navigation__link.mdl-navigation__link {
+  color: #8bc34a;
+}
 
-  .bootcamp-drawer .mdl-layout-title {
-    position: relative;
-    background: #000 url('img/shutterstock_535124929_sm.jpg');
-    height: 160px;
-  }
+.mdl-layout-title {
+  color: #f9efc1; 
+  font-weight: bold; 
+  font-style: italic; 
+  font-size: 26px; 
+  padding-top: 12px; 
+  font-family: 'Orbitron', sans-serif;
+}
 
-    .bootcamp-drawer .bootcamp-logo-image {
-      position: absolute;
-      bottom: 16px;
-    }
+.bootcamp-drawer .mdl-layout-title {
+  position: relative;
+  background: #000 url('img/shutterstock_535124929_sm.jpg');
+  height: 160px;
+  padding-top: 106px;
+}
+
+.bootcamp-drawer .bootcamp-logo-image {
+  position: absolute;
+  bottom: 16px;
+}
 
 .bootcamp-be-together-section {
   position: relative;
@@ -207,6 +223,16 @@ a img{
 
 .bootcamp-request-info {
   font-size: 21px;
+  background: rgb(230, 84, 37);
+  color: #fff;
+  margin: 0 0 32px 0;
+  
+}
+
+.bootcamp-request-info:hover {
+  font-size: 21px;
+  background: rgb(230, 84, 37);
+  color: #fff;
   
 }
 
@@ -273,24 +299,24 @@ a img{
   color: white;
 }
 
-  .bootcamp-wear-band-text p {
-    padding-top: 8px;
-  }
+.bootcamp-wear-band-text p {
+  padding-top: 8px;
+}
 
 .bootcamp-link {
   text-decoration: none;
-  color: #8bc34a !important;
+  color: rgb(230, 84, 37) !important;
 }
 
-  .bootcamp-link:hover {
-    color: #7cb342 !important;
-  }
+.bootcamp-link:hover {
+  color: rgb(200, 54, 7) !important;
+}
 
-  .bootcamp-link .material-icons {
-    position: relative;
-    top: -1px;
-    vertical-align: middle;
-  }
+.bootcamp-link .material-icons {
+  position: relative;
+  top: -1px;
+  vertical-align: middle;
+}
 
 .bootcamp-alt-link {
   text-decoration: none;
@@ -298,14 +324,14 @@ a img{
   font-size: 16px;
 }
 
-  .bootcamp-alt-link:hover {
-    color: #00bfa5 !important;
-  }
+.bootcamp-alt-link:hover {
+  color: #00bfa5 !important;
+}
 
-  .bootcamp-alt-link .material-icons {
-    position: relative;
-    top: 6px;
-  }
+.bootcamp-alt-link .material-icons {
+  position: relative;
+  top: 6px;
+}
 
 .bootcamp-customized-section {
   text-align: center;
